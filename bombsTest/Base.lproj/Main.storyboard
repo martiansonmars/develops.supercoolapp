@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="bombsTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bomb3" translatesAutoresizingMaskIntoConstraints="NO" id="9M0-vv-y3K">
+                                <rect key="frame" x="67" y="57" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dynamite1-large" translatesAutoresizingMaskIntoConstraints="NO" id="Wto-Sh-LWk">
+                                <rect key="frame" x="67" y="226" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OOR-De-uTm">
+                                <rect key="frame" x="124" y="451" width="127" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Hide Real"/>
+                                <connections>
+                                    <action selector="hideReal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OOz-9P-ghv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PX5-wi-w3i">
+                                <rect key="frame" x="144" y="548" width="87" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Hide Fake"/>
+                                <connections>
+                                    <action selector="hideFake:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2ox-Nk-UaT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="fakeBomb" destination="9M0-vv-y3K" id="VQm-To-xfb"/>
+                        <outlet property="realBomb" destination="Wto-Sh-LWk" id="ScR-lz-aZF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="564.5" y="478.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bomb3" width="775" height="800"/>
+        <image name="dynamite1-large" width="2152" height="1614"/>
+    </resources>
+</document>
